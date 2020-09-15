@@ -1,0 +1,135 @@
+/*
+     selector{
+      property: value
+     }
+     */
+
+/* HEADER */
+body {
+  color: whitesmoke;
+  background: slategrey;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: black;
+  background-image: url("../Images/Space.jpeg");
+  background-size: 100%;
+  background-position: center;
+  padding: 20px;
+  /*top, right, bottom, left*/
+  text-align: center;
+  height: 175px;
+}
+header a {
+  color: goldenrod;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+header .logo a {
+  background-image: url("../Images/Logo.png");
+  background-size: 125px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  text-indent: -99999999999999px;
+  width: 125px;
+  height: 125px;
+  top: -42px;
+}
+header .mobile {
+  display: none;
+}
+section {
+  color: gray;
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+div {
+  width: 100px;
+  margin: auto;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 250px) {
+  header.mobile {
+    display: inline-block;
+  }
+  header.desktop {
+    display: none;
+  }
+}
+
+/* NAV */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: silver;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  background-color: rgba(100, 100, 100, 50%);
+}
+
+/* FEATURES */
+.features {
+  background: white;
+  color: gray;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.features figure {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.features figure img {
+  border: 1px solid white;
+  width: 200px;
+  box-shadow: gray 0 0 10px;
+  border-radius: 50%;
+}
+.center-cropped {
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+/* Set the image to fill its parent and make transparent */
+.center-cropped img {
+  min-height: 100%;
+  min-width: 100%;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* modern browsers */
+  opacity: 0;
+}
+
+footer {
+  background: black;
+  color: silver;
+  font-size: 12px;
+  padding: 20px 20px;
+  text-align: center;
+}
